@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App (Objective)</title>
+</head>
+<body>
+
+    <div class="container intro">
+        <p class="header">Math Pop Quiz</p>
+        <p class="desc">Please answer all questions</p>
+        <button class="button start">Start</button>
+    </div>
+
+    <div class="container ingame hide">
+        <form method="GET">
+            <p class="desc question"></p>
+            <div class="options">
+
+                <input type="radio" name="answerOptions" value=""><span class="optionText"></span><br><br>
+                <input type="radio" name="answerOptions" value=""><span class="optionText"></span><br><br>
+                <input type="radio" name="answerOptions" value=""><span class="optionText"></span><br><br>
+                <input type="radio" name="answerOptions" value=""><span class="optionText"></span><br><br>
+
+            </div>
+            
+            <p class="desc outcome"></p>
+            <button type="submit" class="button confirm">Confirm</button>
+            <button class="button next hide">Next</button> 
+        </form>
+    </div>
+
+    <div class="container end hide">
+        <p class="header">END OF QUIZ</p>
+        <p class="desc score"></p>
+        <button class="button again">Try Again</button>
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
